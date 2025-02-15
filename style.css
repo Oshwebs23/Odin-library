@@ -1,0 +1,32 @@
+h1 {
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ color: rgb(23, 59, 47);
+ font-size: 57px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+
+form {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-style: groove;
+
+}
+
+div.book {
+    padding: 10px;
+    color: black;
+    background-color: rgb(74, 78, 78);
+
+}
+
+p.title {
+    
+}
+
+body {
+    
+    background-color: rgb(195, 197, 94);
+    padding: 70px;
+}
