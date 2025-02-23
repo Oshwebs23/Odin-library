@@ -41,8 +41,8 @@ function displayBooks () {
 
         bookTitle.innerText = `Title: ${book.title}`;
         bookAuthor.innerText = `Author: ${book.author}`;
-        bookPages.innerText = `Pages: ${book.pages}`;
-        bookRead.innerText = `Read: ${book.read}`;
+        bookPages.innerText = `Pages:${book.pages}`;
+        bookRead.innerText = `Read: ${book.read ? 'This book has been read' : 'I have not read this book yet' }`;
 
         bookDiv.appendChild(bookTitle);
         bookDiv.appendChild(bookAuthor);
@@ -54,10 +54,10 @@ function displayBooks () {
 })
 }
 
-
 // Function that takes the data from the form //
 
 function addBook() {
+    
     const title = document.getElementById("title").value;
     const author = document.getElementById("author").value;
     const pages = document.getElementById("pages").value;
@@ -65,10 +65,18 @@ function addBook() {
 
     addBookToLibrary(title,author,pages,read);
 
+    
     document.getElementById("newBookForm").reset();
     document.getElementById("newBookForm").style.display = "block";
 
     displayBooks();
 
-}
+};
+
+
+    document.querySelector("#newBookForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    addBook();
+    });
+
 

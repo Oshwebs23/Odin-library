@@ -10,23 +10,34 @@ h1 {
 
 form {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border-style: groove;
+    border-style: ridge;
+    width: fit-content;
 
+}
+
+#newBookForm {
+    background-color: rgb(220, 231, 153);
+    width: min-content;
+    border-style: ridge;
 }
 
 div.book {
     padding: 10px;
     color: black;
-    background-color: rgb(74, 78, 78);
-
-}
-
-p.title {
+    background-color: rgb(165, 163, 153);
+    border: 60px, rgb(5, 0, 10);
+    border-style: double;
     
 }
+
+#book-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
 
 body {
-    
-    background-color: rgb(195, 197, 94);
+    background-color: rgb(236, 236, 232);
     padding: 70px;
 }
