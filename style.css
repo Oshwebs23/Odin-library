@@ -1,6 +1,6 @@
 h1 {
  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- color: rgb(23, 59, 47);
+ color: rgb(0, 0, 0);
  font-size: 57px;
  display: flex;
  align-items: center;
@@ -9,7 +9,8 @@ h1 {
 
 
 form {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:larger;
     border-style: ridge;
     width: fit-content;
 
@@ -38,6 +39,6 @@ div.book {
 
 
 body {
-    background-color: rgb(236, 236, 232);
+    background-color: rgb(26, 63, 105);
     padding: 70px;
 }

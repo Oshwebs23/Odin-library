@@ -39,15 +39,30 @@ function displayBooks () {
         const bookPages = document.createElement('p');
         const bookRead = document.createElement('p');
 
+        const removebutton = document.createElement('button');
+        removebutton.classList.add('button');
+        removebutton.addEventListener("click", function() {
+            removebutton.parentElement.remove();
+            myLibrary.splice(0);
+        
+        });
+        
+       
+
+        
+
         bookTitle.innerText = `Title: ${book.title}`;
         bookAuthor.innerText = `Author: ${book.author}`;
         bookPages.innerText = `Pages:${book.pages}`;
         bookRead.innerText = `Read: ${book.read ? 'This book has been read' : 'I have not read this book yet' }`;
+        removebutton.innerText = 'Delete Book';
+
 
         bookDiv.appendChild(bookTitle);
         bookDiv.appendChild(bookAuthor);
         bookDiv.appendChild(bookPages);
         bookDiv.appendChild(bookRead);
+        bookDiv.appendChild(removebutton);
         bookDiv.classList.add('book');
     
     container.appendChild(bookDiv);
@@ -73,10 +88,10 @@ function addBook() {
 
 };
 
-
-    document.querySelector("#newBookForm").addEventListener("submit", function(event) {
+// Form validation //
+document.querySelector("#newBookForm").addEventListener("submit", function(event) {
     event.preventDefault();
-    addBook();
-    });
+        addBook();
+});
 
 
